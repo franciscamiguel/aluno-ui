@@ -1,0 +1,29 @@
+<form [formGroup]="form">
+<div class="list-group">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome Aluno</th> 
+                <th>Nome do Pai</th>
+                <th>Nome da Mãe</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let aluno of ListaDeAluno">
+                <td>{{aluno.nomeAluno}}</td>
+                <td>{{aluno.nomePai}}</td>
+                <td>{{aluno.nomeMae}}</td>
+                <td>
+                    <button class="btn btn-sm btn-warning">
+                        <a [routerLink]="['/editar-aluno', aluno.id,]">Editar</a>
+                    </button>
+                    <button class="btn btn-sm btn-danger" style="margin-left: 1rem;" (click)="excluirAluno(aluno.id)">
+                        Excluir
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</form>

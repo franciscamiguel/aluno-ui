@@ -1,0 +1,75 @@
+<form [formGroup]="form">
+    <div class="form-group">
+        <label for="Nome">Nome</label>
+        <input type="text" class="form-control" formControlName="nomeAluno" aria-describedby="nomeHelp" placeholder="Seu nome">
+        <small id="Help" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+    </div>
+    <div class="form-group">
+        <label for="Nome Pai">Nome pai</label>
+        <input type="text" class="form-control" formControlName="nomePai" aria-describedby="nomeHelp" placeholder=" Nome do Pai">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Nome Mãe">Nome mae</label>
+        <input type="text" class="form-control" formControlName="nomeMae" aria-describedby="nomeHelp" placeholder="Nome da Mãe">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Sexo">sexo</label>
+        <input type="text" class="form-control" formControlName="sexo" aria-describedby="nomeHelp" placeholder="Sexo">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Nascimento">Nascimento</label>
+        <input type="date" class="form-control" formControlName="nascimento" aria-describedby="nomeHelp" placeholder="Nascimento">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Rg">RG</label>
+        <input type="text" class="form-control" formControlName="rg" aria-describedby="nomeHelp" placeholder="RG">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="CPF">CPF</label>
+        <input type="text" class="form-control" formControlName="cpf" aria-describedby="nomeHelp" placeholder="CPF">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Telefone">Telefone</label>
+        <input type="text" class="form-control" formControlName= "telefone" aria-describedby="nomeHelp" placeholder="Telefone">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Rua">Rua</label>
+        <input type="text" class="form-control" formControlName="rua" aria-describedby="nomeHelp" placeholder="Rua">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Número da casa">Numero da casa</label>
+        <input type="text" class="form-control" formControlName="numero" aria-describedby="nomeHelp"
+            placeholder="Numero da casa">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Turma">Turma</label>
+        <input type="text" class="form-control" formControlName="turma" aria-describedby="nomeHelp" placeholder="Turma">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Curso">Curso</label>
+        <input type="text" class="form-control" formControlName="curso" aria-describedby="nomeHelp" placeholder="Curso">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Turno">Turno</label>
+        <input type="text" class="form-control" formControlName="turno" aria-describedby="nomeHelp" placeholder="Turno">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="Data de Matricula">Data de Matricula</label>
+        <input type="date" class="form-control" formControlName="dataMAtricula" aria-describedby="nomeHelp"
+            placeholder="data de Matricula">
+        <small id="Help" class="form-text text-muted"></small>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="atualizarAluno()">Enviar</button>
+</form>
